@@ -3,18 +3,17 @@ import profile from '../assets/images/profile.jpg';
 
 function Home() {
   return (
-    <>
-      <div className="grid grid-cols-5  mt-4" id='home'>
-        <div className="col-span-3 relative">
-          <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2 -translate-x-1/4">
-            <h1>Front End Developer</h1>
-          </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <img src={profile} className="h-full w-full" alt="Profile" />
-        </div>
-      </div>
-    </>
+    <div id="home" className="bg-white text-gray-800 h-screen flex flex-col items-center justify-center text-center px-4">
+      <h1 className="text-5xl font-bold animate-bounce">Sreekanth Reddy</h1>
+      <p className="mt-4 text-xl font-light">
+        Full Stack Developer with 2.5+ years of experience in React.js, Node.js, and cloud technologies, delivering scalable and efficient solutions.
+      </p>
+      <img
+        src={profile}
+        alt="Profile"
+        className="rounded-full w-40 h-40 border-4 border-teal-500 mt-6 shadow-lg"
+      />
+    </div>
   );
 }
 
