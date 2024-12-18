@@ -12,12 +12,12 @@ function Navbar() {
         <div className="text-2xl font-bold">Portfolio</div>
         
         {/* Hamburger Icon for Mobile View */}
-        <div className="block lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="block md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
         </div>
 
         {/* Menu Links */}
-        <ul className={`lg:flex lg:space-x-6 ${menuOpen ? 'flex flex-col space-y-4 absolute top-16 left-0 w-full bg-white p-4 shadow-lg lg:flex-row lg:static lg:p-0 lg:space-y-0' : 'hidden'}`}>
+        <ul className={`md:flex md:space-x-6 ${menuOpen ? 'flex flex-col space-y-4 absolute top-16 left-0 w-full bg-white p-4 shadow-lg lg:flex-row lg:static lg:p-0 lg:space-y-0' : 'hidden'}`}>
           {menu.map((list, index) => (
             <li key={index}>
               <Link

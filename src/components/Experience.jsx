@@ -1,4 +1,5 @@
 import React from 'react';
+import { BriefcaseIcon, CalendarIcon, ArrowRightIcon } from 'lucide-react';
 
 function Experience() {
   const experiences = [
@@ -14,6 +15,7 @@ function Experience() {
         'Collaborated in Agile teams, participating in sprint planning, code reviews, and version control using Git.',
         'Utilized Docker and Jenkins for building and deploying containerized applications.',
       ],
+      skills: ['JavaScript','React.js', 'Node.js', 'MongoDB', 'Docker', 'Jenkins', 'Git', 'REST APIs', 'Tailwind CSS']
     },
     {
       title: 'Intern',
@@ -23,28 +25,83 @@ function Experience() {
         'Created responsive web pages using HTML, CSS, and JavaScript during a hands-on internship.',
         'Gained foundational knowledge in full-stack development by contributing to real-world projects.',
       ],
+      skills: ['HTML', 'CSS', 'JavaScript', 'Responsive Design']
     },
   ];
 
   return (
-    <div id="experience" className="bg-white py-12">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold">Experience</h2>
-        <div className="mt-6 space-y-6">
+    <section id="experience" className="py-24 ">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="mb-16">
+          {/* <div className="flex items-center gap-4 mb-2">
+            <div className="h-px bg-blue-600 w-8"></div>
+            <span className="text-blue-600 font-medium">Career Path</span>
+          </div> */}
+          <h2 className="text-4xl text-center font-bold text-gray-900">Professional Experience</h2>
+        </div>
+
+        <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-gray-50 shadow-md py-6 px-4 rounded-lg text-left">
-              <h3 className="text-xl font-semibold">{exp.title}</h3>
-              <p className="text-sm text-gray-600">{exp.company} | {exp.duration}</p>
-              <ul className="list-disc list-inside mt-4 text-sm text-gray-800 space-y-2">
-                {exp.responsibilities.map((responsibility, idx) => (
-                  <li key={idx}>{responsibility}</li>
-                ))}
-              </ul>
+            <div
+              key={index}
+              className="relative group"
+            >
+              <div className=""></div>
+              
+              <div className="relative bg-white rounded-lg p-8 shadow-lg border border-gray-100">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-6 gap-4">
+                  <div>
+                    <div className="flex items-center gap-3 mb-2">
+                      <BriefcaseIcon className="w-5 h-5 text-blue-600" />
+                      <h3 className="text-2xl font-bold text-gray-900">{exp.title}</h3>
+                    </div>
+                    <div className="flex items-center gap-3 text-gray-600">
+                      <ArrowRightIcon className="w-4 h-4" />
+                      <span className="font-medium">{exp.company}</span>
+                      <span className="text-gray-300">|</span>
+                      <div className="flex items-center gap-1">
+                        <CalendarIcon className="w-4 h-4" />
+                        <span>{exp.duration}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-8">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-4">Key Contributions</h4>
+                    <ul className="grid gap-3">
+                      {exp.responsibilities.map((responsibility, idx) => (
+                        <li key={idx} className="flex group/item">
+                          <div className="mr-4 mt-1.5">
+                            <div className="h-2 w-2 rounded-full bg-blue-600 group-hover/item:scale-125 transition-transform"></div>
+                          </div>
+                          <span className="text-gray-700 leading-relaxed">{responsibility}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-3">Technologies</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {exp.skills.map((skill, idx) => (
+                        <span
+                          key={idx}
+                          className="px-4 py-1.5 bg-gray-50 text-gray-700 rounded-full text-sm border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
