@@ -14,8 +14,8 @@ function Projects() {
       tags: ['React', 'Node.js', 'MongoDB', 'Socket.io','Express.js', 'AWS'],
       image: dcinfrasight,
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://dc-infrasight.comake.in',
+        github: 'https://github.com/Bhuvaneswar56/DC-InfraSight'
       }
     },
     {
@@ -25,8 +25,8 @@ function Projects() {
       tags: ['React', 'Node.js', 'MongoDB'],
       image: ths,
       links: {
-        demo: '#',
-        github: '#'
+        demo: 'https://hackingexpert.io',
+        github: 'https://github.com/thehackingschool/THS_X'
       }
     },
     {
@@ -36,8 +36,8 @@ function Projects() {
       tags: ['React', 'GitHub API', 'Tailwind CSS'],
       image: github,
       links: {
-        demo: '#',
-        github: '#'
+        demo:'https://github-search.comake.in',
+        github: 'https://github.com/sreekanth184/GitHub-User-Search-Engine'
       }
     },
     {
@@ -47,8 +47,8 @@ function Projects() {
       tags: ['JavaScript', 'React.js', 'Context API', 'Tailwind CSS'],
       image: ecom,
       links: {
-        demo: '#',
-        github: '#'
+        demo:'https://ecom.comake.in',
+        github: 'https://github.com/sreekanth184/Ecommerce'
       }
     }
   ];
