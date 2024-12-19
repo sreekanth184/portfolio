@@ -45,7 +45,7 @@ function Home() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
-              href="/assets/sreekanth-FD-Resume.pdf"
+              href="/assets/Sreekanth-Resume.pdf"
               download
               className="bg-white outline-none hover:bg-gray-50 inline-flex items-center justify-center text-orange-500 border-2 border-orange-500 text-sm md:text-base px-3 py-1.5 md:px-6 md:py-3 rounded-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl gap-2"
             >

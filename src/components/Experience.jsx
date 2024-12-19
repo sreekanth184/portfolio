@@ -8,15 +8,11 @@ function Experience() {
       company: 'DXC Technology',
       duration: 'June 2022 – Present',
       responsibilities: [
-        'Developed dynamic, scalable web applications using React.js, Node.js, Express.js, and MongoDB, delivering seamless full-stack solutions.',
-        'Optimized performance with lazy loading, code splitting, and efficient database queries, reducing application load times by 40%.',
-        'Implemented and integrated RESTful APIs, enabling secure and efficient data exchange between client and server.',
-        'Designed responsive, intuitive user interfaces using Tailwind CSS and modern UI/UX principles, enhancing user engagement and accessibility.',
-        'Collaborated in Agile teams, participating in sprint planning, code reviews, and version control using Git.',
-        'Utilized Docker and Jenkins for building and deploying containerized applications.',
-      ],
+        'Addressed and resolved abends in batch jobs (daily, weekly, monthly), ensuring timely processing and minimal downtime.',
+        'Optimized system performance by monitoring CPU usage and streamlining batch job execution.',
+        'Contributed to converting Excel-based systems into real-time dashboards using WebSockets and React, improving data visualization.'], 
       skills: [
-        'JavaScript', 'React.js', 'Node.js', 'MongoDB', 'Docker', 'Jenkins', 'Git', 'REST APIs', 'Tailwind CSS',
+        'JCL','Mainframe','JavaScript', 'React.js', 'WebSockets'
       ],
     },
     {
@@ -24,11 +20,27 @@ function Experience() {
       company: 'DXC Technology',
       duration: 'Feb 2022 – June 2022',
       responsibilities: [
-        'Created responsive web pages using HTML, CSS, and JavaScript during a hands-on internship.',
-        'Gained foundational knowledge in full-stack development by contributing to real-world projects.',
+        'Trained in mainframe engineering, including batch processing, resolving abends, and system performance optimization.',
+        'Gained foundational knowledge in full-stack development by contributing to real-world projects.'
       ],
       skills: [
-        'HTML', 'CSS', 'JavaScript', 'Responsive Design',
+         'Mainframe'
+      ],
+    },
+    {
+      title: 'Full Stack MERN Bootcamp',
+      company: 'The Hacking School',
+      duration: 'June 2024 – Present',
+      responsibilities: [
+        'Built responsive web applications using React, Tailwind CSS, and JavaScript for the frontend.',
+        'Developed RESTful APIs using Node.js and Express.js for backend services.',
+        'Managed MongoDB databases for efficient data storage and performance optimization.',
+        'Improved application performance through lazy loading, code splitting, and caching, reducing load times by 30%.',
+        'Implemented secure authentication mechanisms using JWT and bcrypt to ensure data security.',
+        'Utilized Docker and Jenkins for building and deploying containerized applications.'
+      ],
+      skills: [
+        'React', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Docker', 'Jenkins'
       ],
     },
   ];
