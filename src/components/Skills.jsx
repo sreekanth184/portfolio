@@ -197,7 +197,7 @@ function Skills() {
                   className="group flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                 >
                   {skill.icon}
-                  <span className="font-medium text-gray-700">
+                  <span className=" text-sm md:text-lg font-medium text-gray-700">
                     {skill.name}
                   </span>
                 </div>
@@ -217,7 +217,7 @@ function Skills() {
                   className="group flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                 >
                   {skill.icon}
-                  <span className="font-medium text-gray-700">
+                  <span className="text-sm md:text-lg font-medium text-gray-700">
                     {skill.name}
                   </span>
                 </div>
@@ -237,7 +237,7 @@ function Skills() {
                   className="group flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                 >
                   {skill.icon}
-                  <span className="font-medium text-gray-700">
+                  <span className="text-sm md:text-lg font-medium text-gray-700">
                     {skill.name}
                   </span>
                 </div>
@@ -257,7 +257,7 @@ function Skills() {
                   className="group flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-300"
                 >
                   {skill.icon}
-                  <span className="font-medium text-gray-700">
+                  <span className="text-sm md:text-lg font-medium text-gray-700">
                     {skill.name}
                   </span>
                 </div>
